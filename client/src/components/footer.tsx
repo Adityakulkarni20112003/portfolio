@@ -49,7 +49,7 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary to-primary bg-clip-text text-transparent">
               Aditya D. Kulkarni
             </h3>
             <p className="text-gray-400 mb-4">

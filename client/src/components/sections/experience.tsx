@@ -47,7 +47,7 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-slate-50" ref={ref}>
+    <section id="experience" className="py-20 bg-blue-100" ref={ref}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center mb-16"
@@ -68,7 +68,7 @@ export default function Experience() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="flex items-start mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center mr-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary rounded-xl flex items-center justify-center mr-4">
                 <Building2 className="w-6 h-6 text-primary-foreground" />
               </div>
               <div>

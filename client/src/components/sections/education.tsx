@@ -64,8 +64,8 @@ export default function Education() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold mb-8 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">Education</h3>
-            <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8">
+            <h3 className="text-2xl font-bold mb-8 bg-gradient-to-r from-primary to-primary bg-clip-text text-transparent">Education</h3>
+            <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl p-8">
               <div className="flex items-start mb-6">
                 <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mr-6">
                   <GraduationCap className="w-8 h-8 text-primary-foreground" />
@@ -101,7 +101,7 @@ export default function Education() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h3 className="text-2xl font-bold mb-8 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">Achievements & Recognition</h3>
+            <h3 className="text-2xl font-bold mb-8 bg-gradient-to-r from-primary to-primary bg-clip-text text-transparent">Achievements & Recognition</h3>
             
             <div className="space-y-6">
               {achievements.map((achievement, index) => {

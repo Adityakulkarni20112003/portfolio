@@ -65,12 +65,12 @@ export default function About() {
           </motion.div>
           
           <motion.div 
-            className="bg-gradient-to-br from-slate-50 to-blue-50 p-8 rounded-2xl"
+            className="bg-gradient-to-br from-blue-100 to-blue-200 p-8 rounded-2xl"
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">Quick Stats</h3>
+            <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-primary to-primary bg-clip-text text-transparent">Quick Stats</h3>
             <div className="grid grid-cols-2 gap-6">
               {stats.map((stat, index) => (
                 <motion.div 

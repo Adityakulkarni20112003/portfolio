@@ -64,7 +64,7 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="py-20 bg-slate-50" ref={ref}>
+    <section id="skills" className="py-20 bg-blue-100" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center mb-16"
@@ -87,7 +87,7 @@ export default function Skills() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <h3 className="text-2xl font-bold mb-8 text-center">Core Programming Languages</h3>
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
+          <div className="bg-blue-50 rounded-2xl p-8 shadow-lg">
             <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
               {skillsWithProficiency.map((skill, index) => {
                 const IconComponent = skill.icon;
@@ -141,7 +141,7 @@ export default function Skills() {
               return (
                 <motion.div
                   key={stack.title}
-                  className="group relative bg-white rounded-2xl p-6 shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl"
+                  className="group relative bg-blue-50 rounded-2xl p-6 shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl"
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
@@ -178,7 +178,7 @@ export default function Skills() {
 
         {/* Skills Overview Chart */}
         <motion.div 
-          className="bg-white rounded-2xl p-8 shadow-lg"
+          className="bg-blue-50 rounded-2xl p-8 shadow-lg"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6, delay: 0.6 }}

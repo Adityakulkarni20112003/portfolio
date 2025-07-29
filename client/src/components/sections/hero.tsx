@@ -16,7 +16,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="py-20 lg:py-32 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section id="home" className="py-20 lg:py-32 bg-gradient-to-br from-blue-100 to-blue-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -30,7 +30,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Hi, I'm <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">Aditya</span>
+              Hi, I'm <span className="bg-gradient-to-r from-primary to-primary bg-clip-text text-transparent">Aditya</span>
             </motion.h1>
             
             <motion.p 
@@ -84,7 +84,7 @@ export default function Hero() {
           >
             <div className="relative">
               <motion.div 
-                className="w-80 h-80 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center shadow-2xl"
+                className="w-80 h-80 bg-gradient-to-br from-primary to-primary rounded-full flex items-center justify-center shadow-2xl"
                 animate={{ 
                   y: [0, -10, 0],
                 }}
@@ -99,7 +99,7 @@ export default function Hero() {
               
               {/* Floating elements */}
               <motion.div 
-                className="absolute -top-4 -right-4 w-8 h-8 bg-blue-400 rounded-full"
+                className="absolute -top-4 -right-4 w-8 h-8 bg-blue-600 rounded-full"
                 animate={{ 
                   scale: [1, 1.2, 1],
                   opacity: [0.7, 1, 0.7]
@@ -111,7 +111,7 @@ export default function Hero() {
                 }}
               />
               <motion.div 
-                className="absolute -bottom-6 -left-6 w-12 h-12 bg-blue-300 rounded-lg rotate-12"
+                className="absolute -bottom-6 -left-6 w-12 h-12 bg-blue-500 rounded-lg rotate-12"
                 animate={{ 
                   rotate: [12, 22, 12],
                   scale: [1, 1.1, 1]

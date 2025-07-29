@@ -29,7 +29,7 @@ export default function Projects() {
       description: "Full-stack e-commerce platform with AI-powered recipe generator. Complete shopping experience with payment integration and inventory management.",
       image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
       tags: ["React", "Node.js", "AI Recipes", "Full-Stack"],
-      colors: ["bg-cyan-100 text-cyan-800", "bg-green-100 text-green-800", "bg-purple-100 text-purple-800", "bg-blue-100 text-blue-800"]
+      colors: ["bg-cyan-200 text-cyan-900", "bg-green-100 text-green-800", "bg-purple-100 text-purple-800", "bg-blue-200 text-blue-900"]
     },
     {
       title: "NOVAEX Trading Platform",
@@ -50,7 +50,7 @@ export default function Projects() {
       description: "Advanced voice assistant with Text-to-Speech and Speech-to-Text capabilities achieving 85% accuracy in voice recognition and natural conversation.",
       image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
       tags: ["Python", "TTS/STT", "85% Accuracy", "Voice AI"],
-      colors: ["bg-blue-100 text-blue-800", "bg-purple-100 text-purple-800", "bg-green-100 text-green-800", "bg-red-100 text-red-800"]
+      colors: ["bg-blue-200 text-blue-900", "bg-purple-100 text-purple-800", "bg-green-100 text-green-800", "bg-red-100 text-red-800"]
     }
   ];
 

@@ -82,7 +82,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-slate-50" ref={ref}>
+    <section id="contact" className="py-20 bg-blue-100" ref={ref}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center mb-16"
@@ -105,7 +105,7 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">Send a Message</h3>
+            <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-primary to-primary bg-clip-text text-transparent">Send a Message</h3>
             
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
@@ -211,7 +211,7 @@ export default function Contact() {
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">Let's Connect</h3>
+              <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-primary to-primary bg-clip-text text-transparent">Let's Connect</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start">
@@ -274,7 +274,7 @@ export default function Contact() {
             
             {/* Call to Action */}
             <motion.div 
-              className="bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-8 text-primary-foreground"
+              className="bg-gradient-to-br from-primary to-primary rounded-2xl p-8 text-primary-foreground"
               initial={{ opacity: 0, x: 30 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
               transition={{ duration: 0.6, delay: 0.5 }}
