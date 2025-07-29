@@ -4,6 +4,14 @@
 
 This is a modern full-stack portfolio application showcasing Aditya D. Kulkarni's work as an AI enthusiast, full-stack developer, and ML/Deep Learning innovator. The application features a React frontend with shadcn/ui components, an Express.js backend, and uses Drizzle ORM for database operations. The architecture follows a monorepo structure with shared types and schemas.
 
+## Recent Changes
+
+**January 29, 2025**
+- Enhanced primary color visibility (changed from 54% to 45% lightness)  
+- Removed color-changing hover effects from skill cards
+- Improved hover animations with subtle lift and scale effects
+- Maintained clean, professional design without distracting color transitions
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.

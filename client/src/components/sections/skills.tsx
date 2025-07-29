@@ -91,17 +91,17 @@ export default function Skills() {
                 return (
                   <motion.div
                     key={skill.name}
-                    className="group bg-white p-6 rounded-xl shadow-sm text-center transition-all duration-300 hover:shadow-lg hover:scale-105 hover:bg-gradient-to-br hover:from-primary hover:to-primary/80 hover:text-white cursor-pointer"
+                    className="group bg-white p-6 rounded-xl shadow-sm text-center transition-all duration-300 hover:shadow-lg cursor-pointer"
                     initial={{ opacity: 0, y: 20 }}
                     animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     transition={{ duration: 0.4, delay: categoryIndex * 0.2 + skillIndex * 0.1 }}
-                    whileHover={{ y: -5 }}
+                    whileHover={{ y: -8, scale: 1.02 }}
                   >
-                    <div className={`w-12 h-12 mx-auto mb-4 ${skill.color} rounded-lg flex items-center justify-center group-hover:bg-white/20 group-hover:text-white transition-all duration-300`}>
+                    <div className={`w-12 h-12 mx-auto mb-4 ${skill.color} rounded-lg flex items-center justify-center transition-all duration-300`}>
                       <IconComponent className="w-8 h-8" />
                     </div>
-                    <h4 className="font-semibold text-foreground mb-2 group-hover:text-white">{skill.name}</h4>
-                    <p className="text-muted-foreground text-sm group-hover:text-white/80">{skill.description}</p>
+                    <h4 className="font-semibold text-foreground mb-2">{skill.name}</h4>
+                    <p className="text-muted-foreground text-sm">{skill.description}</p>
                   </motion.div>
                 );
               })}
