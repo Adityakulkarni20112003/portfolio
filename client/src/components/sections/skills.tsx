@@ -24,17 +24,7 @@ export default function Skills() {
 
   const skillsWithProficiency = [
     { name: "Python", level: 95, icon: Code2, color: "#3776ab", category: "Programming" },
-    { name: "Machine Learning", level: 90, icon: Brain, color: "#FF6B6B", category: "AI/ML" },
-    { name: "React", level: 88, icon: Globe, color: "#61DAFB", category: "Frontend" },
-    { name: "TypeScript", level: 85, icon: Code2, color: "#3178c6", category: "Programming" },
-    { name: "Node.js", level: 82, icon: Server, color: "#339933", category: "Backend" },
-    { name: "Deep Learning", level: 85, icon: Brain, color: "#FF4757", category: "AI/ML" },
-    { name: "PostgreSQL", level: 80, icon: Database, color: "#336791", category: "Database" },
-    { name: "Java", level: 78, icon: Cpu, color: "#f89820", category: "Programming" },
-    { name: "Computer Vision", level: 82, icon: Eye, color: "#4ECDC4", category: "AI/ML" },
-    { name: "Flask", level: 80, icon: Server, color: "#000000", category: "Backend" },
-    { name: "NLP", level: 75, icon: MessageSquare, color: "#7B68EE", category: "AI/ML" },
-    { name: "MongoDB", level: 75, icon: Database, color: "#47A248", category: "Database" }
+    { name: "Java", level: 70, icon: Cpu, color: "#f89820", category: "Programming" }
   ];
 
   const techStacks = [
@@ -68,13 +58,9 @@ export default function Skills() {
     }
   ];
 
-  const categories = ["Programming", "AI/ML", "Frontend", "Backend", "Database"];
+  const categories = ["Programming"];
   const categoryColors = {
-    "Programming": "#3776ab",
-    "AI/ML": "#FF6B6B", 
-    "Frontend": "#61DAFB",
-    "Backend": "#339933",
-    "Database": "#336791"
+    "Programming": "#3776ab"
   };
 
   return (
@@ -100,9 +86,9 @@ export default function Skills() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h3 className="text-2xl font-bold mb-8 text-center">Technical Proficiency</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center">Core Programming Languages</h3>
           <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
               {skillsWithProficiency.map((skill, index) => {
                 const IconComponent = skill.icon;
                 return (
@@ -199,10 +185,10 @@ export default function Skills() {
         >
           <h3 className="text-2xl font-bold mb-8 text-center flex items-center justify-center">
             <TrendingUp className="w-6 h-6 mr-2 text-primary" />
-            Skills Distribution
+            Programming Expertise
           </h3>
           
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+          <div className="flex justify-center">
             {categories.map((category, index) => {
               const categorySkills = skillsWithProficiency.filter(skill => skill.category === category);
               const avgLevel = categorySkills.reduce((sum, skill) => sum + skill.level, 0) / categorySkills.length;
