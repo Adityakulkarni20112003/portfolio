@@ -1,0 +1,85 @@
+1. Hero Section (Landing Page)
+Your name: Aditya D. Kulkarni
+
+Tagline: “AI Enthusiast | Full-Stack Developer | ML & Deep Learning Innovator”
+
+A short 2–3 line intro about you.
+
+A professional photo / SVG avatar.
+
+Buttons: Download Resume & Contact Me
+
+2. About Me
+Short professional summary from your resume.
+
+A few key highlights (AI, ML, Deep Learning, Web Development).
+
+Skills cloud with modern tech stack icons (SVG) → Python, React, Node.js, Flask, PostgreSQL, MongoDB, etc.
+
+3. Skills & Tech Stack
+Use grid cards with SVG icons for:
+
+Languages: Python, Java, TypeScript
+
+Frontend: React, HTML, CSS, JS
+
+Backend: Flask, Node.js
+
+Databases: SQL, PostgreSQL, MongoDB
+
+AI/ML: Machine Learning, Deep Learning, NLP, CV
+
+Tools: GitHub, VS Code, Streamlit, Google Colab
+
+4. Projects Showcase
+Each project in a card layout with image + description + tech stack badges + Live Demo & GitHub buttons.
+
+Smart AC (AI-Driven System) → highlight 94% accuracy, React.js frontend, ML backend.
+
+Virtual Drag and Drop (Computer Vision) → gesture control, Streamlit live demo.
+
+Sweet Delights (E-Commerce) → AI recipe generator, full-stack features.
+
+NOVAEX (Commodity Trading Platform) → real-time <100ms latency system.
+
+Elite Holidays (Travel Portal) → booking system + AI chatbot.
+
+AI Call Agent → TTS + STT with 85% accuracy.
+
+💡 Use interactive carousels or tabs to keep it modern.
+
+5. Experience
+Co-Founder & Head of AI | Giganxt Solutions
+
+Key achievements (bullet points).
+
+Professional roles & freelance projects.
+
+6. Education & Achievements
+B.Tech in CSE (DIEMS, 2025).
+
+Hackathon recognition (SunHacks Runner-Up).
+
+Volunteer work (Voice For Speechless NGO).
+
+7. Contact Section
+Professional contact form (React Hook Form + EmailJS / Nodemailer).
+
+Social links with SVG icons: LinkedIn, GitHub, Email.
+
+Location: Chh. Sambhajinagar, Maharashtra, India.
+
+🎨 Design & UI Recommendations
+Theme: White background, subtle gray shadows, blue & black accents.
+
+Typography: Clean fonts like Inter, Poppins, or Roboto.
+
+Animations: Use Framer Motion for smooth card hover effects & page transitions.
+
+SVG Icons: Use Heroicons or Lucide React for modern look.
+
+Layout: Grid & flexbox-based layout for responsiveness.
+
+Navbar: Sticky, minimal, with smooth scrolling.
+
+Footer: Clean, with copyright + quick links.
