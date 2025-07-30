@@ -15,7 +15,6 @@ export default function Experience() {
       "Led AI development initiatives, driving innovation in machine learning solutions",
       "Built and deployed multiple AI-powered applications with 90%+ accuracy rates",
       "Managed cross-functional teams to deliver scalable tech solutions", 
-      "Established company's AI strategy and technology roadmap"
     ]
   };
 
@@ -23,7 +22,7 @@ export default function Experience() {
     {
       title: "Full-Stack Developer",
       company: "Freelance Projects",
-      period: "2022 - Present",
+      period: "2023 - Present",
       description: "Developed custom web applications and AI solutions for various clients, focusing on React.js frontends and Python/Flask backends.",
       icon: Code,
       color: "bg-gray-100 text-gray-600"
@@ -36,14 +35,7 @@ export default function Experience() {
       icon: BookOpen,
       color: "bg-blue-100 text-blue-600"
     },
-    {
-      title: "Tech Volunteer",
-      company: "Voice For Speechless NGO",
-      period: "2022 - Present", 
-      description: "Volunteered technical expertise to develop digital solutions for social causes and community outreach programs.",
-      icon: Heart,
-      color: "bg-green-100 text-green-600"
-    }
+  
   ];
 
   return (

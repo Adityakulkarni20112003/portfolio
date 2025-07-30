@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useRef, useState } from "react";
-import { MapPin, Clock, Linkedin, Github, Mail, Send, Phone } from "lucide-react";
+import { useRef } from "react";
+import { MapPin, Clock, Linkedin, Github, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -60,24 +60,19 @@ export default function Contact() {
     contactMutation.mutate(data);
   };
 
+  // Only LinkedIn and GitHub
   const socialLinks = [
     {
       name: "LinkedIn",
       icon: Linkedin,
-      href: "https://linkedin.com/in/aditya-kulkarni",
+      href: "https://www.linkedin.com/in/aditya-kulkarni20/",
       color: "text-blue-600 hover:text-primary"
     },
     {
       name: "GitHub", 
       icon: Github,
-      href: "https://github.com/aditya-kulkarni",
+      href: "https://github.com/Adityakulkarni20112003",
       color: "text-gray-900 hover:text-primary"
-    },
-    {
-      name: "Email",
-      icon: Mail,
-      href: "mailto:aditya@example.com",
-      color: "text-red-600 hover:text-primary"
     }
   ];
 
@@ -245,7 +240,7 @@ export default function Contact() {
             >
               <h3 className="text-xl font-bold mb-6">Follow Me</h3>
               
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 {socialLinks.map((social, index) => {
                   const IconComponent = social.icon;
                   return (
@@ -271,24 +266,7 @@ export default function Contact() {
                 })}
               </div>
             </motion.div>
-            
-            {/* Call to Action */}
-            <motion.div 
-              className="bg-gradient-to-br from-primary to-primary rounded-2xl p-8 text-primary-foreground"
-              initial={{ opacity: 0, x: 30 }}
-              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-            >
-              <h3 className="text-xl font-bold mb-4">Ready to Start Your Project?</h3>
-              <p className="mb-6 opacity-90">Let's discuss how I can help bring your ideas to life with cutting-edge AI and web technologies.</p>
-              <Button 
-                variant="secondary"
-                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold"
-              >
-                <Phone className="w-4 h-4 mr-2" />
-                Schedule a Call
-              </Button>
-            </motion.div>
+            {/* "Ready to Start Your Project?" section removed */}
           </div>
         </div>
       </div>

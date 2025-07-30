@@ -7,17 +7,17 @@ export default function About() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const highlights = [
-    "AI & Machine Learning Expert",
-    "Full-Stack Web Developer", 
-    "Deep Learning & Computer Vision",
-    "Natural Language Processing"
+    "Driven by curiosity and creativity",
+    "Dedicated AI & ML Enthusiast",
+    "Full-Stack Developer with strong problem-solving skills",
+    "Committed to continuous learning"
   ];
 
   const stats = [
-    { value: "6+", label: "Projects Completed" },
+    { value: "6+", label: "Innovative Projects" },
     { value: "94%", label: "ML Model Accuracy" },
-    { value: "2+", label: "Years Experience" },
-    { value: "1", label: "Company Co-Founded" }
+    { value: "1+", label: "Years of Experience" },
+    { value: "1", label: "Startup Co-Founded" }
   ];
 
   return (
@@ -40,12 +40,10 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              As a B.Tech Computer Science student and Co-Founder at Giganxt Solutions, I combine academic excellence with entrepreneurial drive. 
-              My expertise spans from building responsive web applications to developing sophisticated AI models that solve real-world problems.
+              I am currently pursuing a B.Tech in Artificial Intelligence & Machine Learning, a field that constantly challenges and motivates me to think differently and innovate. My academic journey has deepened my understanding of cutting-edge AI concepts, fostering a fascination for their potential in transforming real-world applications.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              I'm passionate about the intersection of technology and innovation, constantly exploring new ways to leverage AI and machine learning 
-              to create meaningful impact in various industries.
+              In addition to my studies, I am a co-founder at Giganxt Solutions. This entrepreneurial experience has taught me that effective technology solutions emerge from dedication, collaboration, and a commitment to excellence. Whether developing user-centric web applications or designing robust AI models, I strive to make a positive impact through both technical skill and thoughtful problem-solving.
             </p>
             
             <div className="space-y-4">

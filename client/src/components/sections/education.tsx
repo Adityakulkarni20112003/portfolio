@@ -9,13 +9,6 @@ export default function Education() {
 
   const achievements = [
     {
-      title: "SunHacks Runner-Up",
-      subtitle: "Hackathon Competition 2023",
-      description: "Secured runner-up position in a competitive hackathon with an innovative AI solution addressing real-world challenges.",
-      icon: Award,
-      color: "bg-yellow-100 text-yellow-600"
-    },
-    {
       title: "Academic Excellence",
       subtitle: "High Performance in Core Subjects", 
       description: "Consistently maintained high academic standards with focus on computer science fundamentals and AI/ML coursework.",
@@ -41,7 +34,6 @@ export default function Education() {
   const educationHighlights = [
     "Specialization in Artificial Intelligence and Machine Learning",
     "Relevant Coursework: Data Structures, Algorithms, Database Systems",
-    "Active member of Computer Science Society"
   ];
 
   return (

@@ -13,17 +13,17 @@ export default function Footer() {
   const socialLinks = [
     { 
       icon: Linkedin, 
-      href: "https://linkedin.com/in/aditya-kulkarni",
+      href: "https://www.linkedin.com/in/aditya-kulkarni20/",
       label: "LinkedIn"
     },
     { 
       icon: Github, 
-      href: "https://github.com/aditya-kulkarni",
+      href: "https://github.com/Adityakulkarni20112003",
       label: "GitHub"
     },
     { 
       icon: Mail, 
-      href: "mailto:aditya@example.com",
+      href: "mailto:kuladitya1000@gmail.com",
       label: "Email"
     }
   ];
@@ -93,10 +93,10 @@ export default function Footer() {
             <div className="space-y-2 mb-6">
               <p className="text-gray-400">Ready to collaborate?</p>
               <a 
-                href="mailto:aditya@example.com"
+                href="mailto:kuladitya1000@gmail.com"
                 className="text-primary hover:text-primary/80 transition-colors duration-300"
               >
-                aditya@example.com
+                kuladitya1000@gmail.com
               </a>
             </div>
             

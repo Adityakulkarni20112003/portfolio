@@ -4,6 +4,8 @@ import { storage } from "./storage";
 import { insertContactMessageSchema } from "@shared/schema";
 import { z } from "zod";
 import nodemailer from "nodemailer";
+import path from "path";
+import fs from "fs";
 
 // Email configuration
 const createTransporter = () => {
@@ -69,12 +71,19 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // Resume download endpoint
   app.get("/api/resume", (req, res) => {
-    // In a real implementation, this would serve the actual resume file
-    res.json({ 
-      downloadUrl: "/resume/Aditya_D_Kulkarni_Resume.pdf",
-      message: "Resume download functionality would be implemented here" 
-    });
+    const resumePath = path.join(process.cwd(), 'public', 'resume', 'Aditya_D_Kulkarni_Resume.pdf');
+    if (fs.existsSync(resumePath)) {
+      res.download(resumePath);
+    } else {
+      res.status(404).json({ 
+        error: "Resume file not found",
+        message: "Please upload your resume file to the public/resume directory" 
+      });
+    }
   });
+
+  // Serve static files from the public directory
+  app.use(express.static(path.join(process.cwd(), 'public')));
 
   const httpServer = createServer(app);
   return httpServer;
